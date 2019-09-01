@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
+import Header from '../components/shared/Header'
 
-class index extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Hello World</h1> 
-            </div>
-        )
-    }
-}
+class index extends Component { 
+    render() { 
+        return ( 
+            <div> 
+                <Header /> 
+                <h5>Hello World again</h5> 
+            </div> 
+        ) 
+    } 
+} 
 
 export default index; 
