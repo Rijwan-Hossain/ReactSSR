@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
 import BaseLayout from '../components/layout/BaseLayout'
+import '../styles/main.scss'
 
 class About extends Component {
+    static getInitialProps() {
+        console.log('Inside');
+        return {name: 'Rijwan'}
+    }
     render() {
+        console.log('About Render');
+        console.log(this.props.name);
+        
         return (
             <BaseLayout> 
-                About Page
+                <p>About Page</p>
             </BaseLayout>
         )
     }
